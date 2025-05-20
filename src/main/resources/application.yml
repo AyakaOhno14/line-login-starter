@@ -1,10 +1,17 @@
 server:
-    port: 9000
+  port: 9000
 
 management:
-    address: 127.0.0.1
-    port: 9100
+  address: 127.0.0.1
+  port: 9100
 
 logging:
-    level:
-        com.linecorp.sample: DEBUG
+  level:
+    com.linecorp.sample: DEBUG
+
+linecorp:
+  platform:
+    channel:
+    channelId: ${LINECORP_PLATFORM_CHANNEL_CHANNELID}
+    channelSecret: ${LINECORP_PLATFORM_CHANNEL_CHANNELSECRET}
+    callbackUrl: ${LINECORP_PLATFORM_CHANNEL_CALLBACKURL}
